@@ -40,13 +40,13 @@ app.layout = html.Div([
             id='dropdown-statistics',
             options=dropdown_options,
             value='Select Statistics',
-            placeholder='Select a report type',
+            placeholder='Select a report type'
         )
     ]),
     html.Div(dcc.Dropdown(
             id='select-year',
             options=[{'label': i, 'value': i} for i in year_list],
-            value='Year'
+            value='select-year'
         )),
     html.Div([#TASK 2.3: Add a division for output display
     html.Div(id='output-container', className='chart-grid', style={'display':'flex'}),])
