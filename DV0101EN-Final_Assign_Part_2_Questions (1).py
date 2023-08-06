@@ -98,7 +98,7 @@ def update_output_container(selected_statistics, input_year):
             # grouping data for plotting
         exp_rec= recession_data.groupby('Vehicle_Type')['Advertising_Expenditure'].sum().reset_index()
         R_chart3 = dcc.Graph(
-                    figure=px.pie(exp_rec, values='exp_percent', names= 'Vehicle_Type', 
+                    figure=px.pie(exp_rec, values='Advertising_Expenditure', names= 'Vehicle_Type', 
                     title='Recessionary Expenditure Percentage by Vehicle Type')
         )
 
